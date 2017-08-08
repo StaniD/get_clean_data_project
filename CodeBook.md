@@ -1,6 +1,6 @@
-## Code Book
+##Code Book
 ## Getting and Cleaning Data
-
+ 
 ## 1. The Raw data: 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
@@ -25,7 +25,7 @@ run_analysis.R :
       result: 
           >dim(alldataset)
           [1] 10299    66
-  Read the activity names from "activity_labels.txt" file and replaces the coresponding label with the activity name. 
+  Read the activity names from "activity_labels.txt" file and replaces the corresponding label with the activity name. 
   Merge allsubjects and activity as first and second columns into the dataset      
         result: 
         >dim(alldataset)
@@ -33,7 +33,7 @@ run_analysis.R :
   Clean the dataset variables: 
     remove "(", ")", "-" from the column names 
     repetition words "bodybody" to "body"
-    replase "t" to "time"" and "f" to "frequency"
+    replace "t" to "time"" and "f" to "frequency"
   Creates a second tidy dataset grouped by subject and activity, and calculate the mean for every measurement columns (3:68).
     
   Change working directory one level up and save 2 datasets as 2 text files: alltidydata.txt and tidymeansdata.txt. Opens tidymeansdata.txt in text editor. 
@@ -44,8 +44,8 @@ run_analysis.R :
     Each observation contains subject, activity name and measurement variables.
     
 ## 4. Variables list of tidymeanstdata.txt: 
-> str(outputdata)
-Classes 'grouped_df', 'tbl_df', 'tbl' and 'data.frame':	180 obs. of  68 variables:
+str(outputdata)
+Classes ‘grouped_df’, ‘tbl_df’, ‘tbl’ and 'data.frame':	180 obs. of  68 variables:
  subjects                     : int  1 1 1 1 1 1 2 2 2 2 ...
  activity                     : Factor w/ 6 levels "laying","sitting",..: 1 2 3 4 5 6 1 2 3 4 ...
    timebodyacc_mean_x           : num  0.222 0.261 0.279 0.277 0.289 ...
@@ -116,7 +116,7 @@ Classes 'grouped_df', 'tbl_df', 'tbl' and 'data.frame':	180 obs. of  68 variable
    frequencybodygyrojerkmag_std : num  -0.933 -0.987 -0.995 -0.382 -0.392 ...
 
 ## 5. Variables list of alltidydata.txt:
-> str(alldataset)
+str(alldataset)
 'data.frame':	10299 obs. of  68 variables:
  $ subjects                     : int  1 1 1 1 1 1 1 1 1 1 ...
  $ activity                     : Factor w/ 6 levels "laying","sitting",..: 3 3 3 3 3 3 3 3 3 3 ...
