@@ -11,7 +11,7 @@ Create one R script called run_analysis.R that does the following:
     3. Uses descriptive activity names to name the activities in the data set
     4. Appropriately labels the data set with descriptive activity names
     5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject
-
+    
 Content in this repository: 
     1. run_analysis.R: R script to merge, clean-up, transform the raw data and create the tiny data set (created in RStudio Ver. 1.0.153 in Windows 10)
     2. CodeBook.md: Code Book describes the original data, the variables and the transformations performed to clean up the data and creates tidy dataset
@@ -20,18 +20,17 @@ Content in this repository:
     
 Before running the script: 
     1. Read the Codebook for the steps taken and variables info
-    2. install dplyr package
-    3. install if read.table
-
+    2. Ensure that you have installed "data.table" and "dplur" packages
+    3. To install packages use: install.packages("data.table"); install.packages("dplyr")    
 
 During run of the script: 
     1. Opens "README.txt"" to view and refer info for the dataset files.
     2. Opens "features_info.txt" to refer more info about variables measurment names 
-    3. Opens "outputdata.txt - the independend tudy datasetoutput file with average .
+    3. Opens "outputdata.txt - the independend tudy dataset output file with average of the measurments
     
 Run run_analysis.R
     
 Notes: 
     in your working dir 
     The second tidy dataset "outpudata.txt" is saved in the unzipped folder: "UCI HAR Dataset" 
-    Variables names and data structure - refer Codebook.md. 
+    Variables names and data structure - refer to Codebook.md in this repo. 
