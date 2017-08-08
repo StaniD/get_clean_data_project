@@ -57,7 +57,7 @@ alldataset<-cbind(allsubjects,alldataset)
 #4. Appropriately labels the dataset with descriptive activity names. 
     # clean the data variables: remove "(", ")", "-" from the column names 
     # repetition words "bodybody" to "body"
-    # replase t to time and f to frequency
+    # replace "t" to "time" and "f" to "frequency"
 alldataset <- alldataset %>% 
   setNames(tolower(gsub("\\(\\)","",names(.)))) %>%                                       
   setNames(gsub("-","_", names(.))) %>% 
