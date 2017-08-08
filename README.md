@@ -20,17 +20,17 @@ Content in this repository:
     
 Before running the script: 
     1. Read the Codebook for the steps taken and variables info
-    2. Ensure that you have installed "data.table" and "dplur" packages
+    2. Ensure that you have installed "data.table" and "dplyr" packages
     3. To install packages use: install.packages("data.table"); install.packages("dplyr")    
 
 During run of the script: 
     1. Opens "README.txt"" to view and refer info for the dataset files.
-    2. Opens "features_info.txt" to refer more info about variables measurment names 
-    3. Opens "outputdata.txt - the independend tudy dataset output file with average of the measurments
+    2. Opens "features_info.txt" to refer more info about variables measurement names 
+    3. Opens "outputdata.txt - the independent tidy dataset output file with average of the measurements
     
 Run run_analysis.R
     
 Notes: 
-    in your working dir 
-    The second tidy dataset "outpudata.txt" is saved in the unzipped folder: "UCI HAR Dataset" 
-    Variables names and data structure - refer to Codebook.md in this repo. 
+    the row data will be downloaded in your working directory. 
+    The second tidy dataset "outputdata.txt" is saved in the unzipped folder: "UCI HAR Dataset" 
+    Variables names and data structure - refer to Codebook.md in this repo.
